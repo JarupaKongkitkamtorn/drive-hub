@@ -188,7 +188,6 @@
   border-radius: 4px;
   background: #ffffff;
   display: flex;
-  width: 302px !important;
   padding: 10px 12px !important;
   align-items: center;
 }
@@ -246,15 +245,23 @@
   background-color: #93c5fd !important;
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 590px) {
   .input .MuiFormControl-root,
   .input .MuiTextField-root,
-  .input .MuiOutlinedInput-root {
+  .input .MuiOutlinedInput-root,
+  .input .MuiOutlinedInput-input {
     width: 100% !important;
   }
 }
 @media screen and (max-width: 820px) {
   .section-top-title {
     margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .input .MuiOutlinedInput-input {
+    width: 302px !important;
+    max-width: 302px !important ;
   }
 }
