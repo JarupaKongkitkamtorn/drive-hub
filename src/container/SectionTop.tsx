@@ -6,14 +6,14 @@ import { Grid, TextField, MenuItem, Select } from "@mui/material";
 //component
 import { filterData } from "../const/Sort";
 
-interface SectionTop {
+interface SectionTopType {
   searchValue: string;
   filter: string;
   handleChange: (event: any) => void;
   handleChangeFilter: (event: any) => void;
 }
 
-function SectionTop(data: SectionTop) {
+function SectionTop(data: SectionTopType) {
   const { handleChange, searchValue, filter, handleChangeFilter } = data;
   return (
     <Grid

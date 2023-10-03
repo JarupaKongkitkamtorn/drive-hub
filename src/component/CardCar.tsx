@@ -19,13 +19,13 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { imageExist } from "../function/function_image";
 import { carData } from "../App";
 
-interface CardCar {
+interface CardCarType {
   car: carData;
   idx: any;
   handleCart: (idx: any, count: number, type: string) => void;
 }
 
-function CardCar(data: CardCar) {
+function CardCar(data: CardCarType) {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
   const { car, handleCart, idx } = data;

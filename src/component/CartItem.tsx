@@ -13,12 +13,12 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 //component
 import { imageExist } from "../function/function_image";
 
-interface CartItem {
+interface CartItemType {
   cart: any;
   idx: any;
   handleData: (idx: any, type: string) => void;
 }
-function CartItem(data: CartItem) {
+function CartItem(data: CartItemType) {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("md"));
   const { cart, idx, handleData } = data;
@@ -34,6 +34,7 @@ function CartItem(data: CartItem) {
         {matches && (
           <Grid item lg={2}>
             <img
+              alt="photo_car"
               src={imageExist(cartData.photo) ? cartData.photo : noimage}
               height="54px"
               width="87px"

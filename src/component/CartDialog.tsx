@@ -30,7 +30,7 @@ const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   },
 }));
 
-interface CartDialog {
+interface CartDialogType {
   cart: any;
   open: boolean;
   carListDiscount: any;
@@ -38,7 +38,7 @@ interface CartDialog {
   handleCart: (idx: any, count: number, type: string) => void;
 }
 
-function CartDialog(data: CartDialog) {
+function CartDialog(data: CartDialogType) {
   const { cart, open, handleClose, carListDiscount, handleCart } = data;
   const [dataCart, setDataCart] = useState(cart);
   const [total, setTotal] = useState(0);

@@ -10,13 +10,13 @@ import { Grid } from "@mui/material";
 //component
 import CartDialog from "../CartDialog";
 
-interface Navbar {
+interface NavbarType {
   cart: any;
   carListDiscount: any;
   handleCart: (idx: any, count: number, type: string) => void;
 }
 
-function Navbar(data: Navbar) {
+function Navbar(data: NavbarType) {
   const { cart, carListDiscount, handleCart } = data;
   const [open, setOpen] = useState(false);
 

@@ -6,12 +6,12 @@ import { Grid } from "@mui/material";
 //component
 import CardCar from "../component/CardCar";
 
-interface CarList {
+interface CarListType {
   carList: any;
   handleCart: (idx: any, count: number, type: string) => void;
 }
 
-function CarList(data: CarList) {
+function CarList(data: CarListType) {
   const { carList, handleCart } = data;
   return (
     <div className="card-list">
