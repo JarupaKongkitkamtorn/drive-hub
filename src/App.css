@@ -140,11 +140,6 @@
 /* Footer */
 
 .app-footer {
-  z-index: 5;
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
   background: #111827;
   color: #fff;
   padding: 31px 6%;
@@ -199,8 +194,7 @@
 }
 
 .card-list {
-  min-height: 100vh;
-  margin-bottom: 90px;
+  min-height: 90vh;
   background-color: #f3f4f6;
 }
 
@@ -253,9 +247,6 @@
 }
 
 @media screen and (max-width: 390px) {
-  .card-list {
-    padding-bottom: 140px;
-  }
   .input .MuiFormControl-root,
   .input .MuiTextField-root,
   .input .MuiOutlinedInput-root {
@@ -265,8 +256,5 @@
 @media screen and (max-width: 820px) {
   .section-top-title {
     margin-bottom: 16px;
-  }
-  .card-list {
-    padding-bottom: 60px;
   }
 }
